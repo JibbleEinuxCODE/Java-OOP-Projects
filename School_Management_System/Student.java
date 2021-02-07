@@ -42,8 +42,54 @@ public class Student {
         this.grade = grade;
     }
 
-    public void updateFeesPaid(int fees) {
-        feesPaid = fees;
+    /**
+     * 
+     * Add the fees to the fees paid. this school is going to recive the funds.
+     * 
+     * @param fees
+     */
+    public void payFees(int fees) {
+        feesPaid += fees;
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    // public void setId(int id) {
+    // this.id = id;
+    // }
+
+    public String getName() {
+        return name;
+    }
+
+    // public void setName(String name) {
+    // this.name = name;
+    // }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public int getFeesPaid() {
+        return feesPaid;
+    }
+
+    // public void setFeesPaid(int feesPaid) {
+    // this.feesPaid = feesPaid;
+    // }
+
+    public int getFeesTotal() {
+        return feesTotal;
+    }
+
+    // public void setFeesTotal(int feesTotal) {
+    // this.feesTotal = feesTotal;
+    // }
+
+    public int getRemainingFees() {
+        return feesTotal - feesPaid;
+    }
 }
