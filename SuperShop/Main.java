@@ -4,6 +4,13 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("\n\n------------------------------------");
+        System.out.println("              Qwner                  ");
+        System.out.println("------------------------------------\n\n");
+
+        Owner o1 = new Owner("Zahidul Islam", 21, "Male", 100);
+        o1.displayOwner();
+
+        System.out.println("\n\n------------------------------------");
         System.out.println("         Employee List              ");
         System.out.println("------------------------------------\n\n");
 
